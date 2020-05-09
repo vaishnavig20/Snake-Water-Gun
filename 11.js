@@ -62,7 +62,7 @@ const compChoice=getComputerChoice();
               case "ws";
             case "gw";
             case "sg";
-            lose(userChoice , compChoice);
+            loss(userChoice , compChoice);
             
             break;
                case "ss";
