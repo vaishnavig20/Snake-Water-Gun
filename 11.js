@@ -75,13 +75,15 @@ const compChoice=getComputerChoice();
 }
 
 function main(){
-
+snake &&
 snake_div.addEventListener('click',function(){
    game("s");
 })
+    water &&
 water_div.addEventListener('click',function(){
    game("w");
 })
+    gun &&
 gun_div.addEventListener('click',function(){
    game("g");
 })
