@@ -36,7 +36,7 @@ function loss(user,comp){
       compScore_span.innerHTML= compScore;
      const smallUser="user".fontsize(3).sup();
     const smallComp="comp".fontsize(3).sup();
-    result_p.innerHTML= `${convertToWord(comp)}  beats ${convertToWord(user)}  You Lose!"`;
+    result_p.innerHTML= `${convertToWord(comp)}${smallComp}  beats ${convertToWord(user)}${smallUser}   You Lose!"`;
     document.getElementById(user).classList.add('red-glow');
     setTimeout(function() 
   {document.getElementById(user).classList.remove('red-glow')}, 300);
@@ -44,7 +44,7 @@ function loss(user,comp){
 function draw(user,comp){
      const smallUser="user".fontsize(3).sup();
     const smallComp="comp".fontsize(3).sup();
-    result_p.innerHTML= `${convertToWord(user)}  draws with ${convertToWord(comp)} ,Tie!"`;
+    result_p.innerHTML= `${convertToWord(user)}${smallUser}   draws with ${convertToWord(comp)} ${smallComp},Tie!"`;
     document.getElementById(user).classList.add('gray-glow');
      setTimeout(function() 
     {document.getElementById(user).classList.remove('gray-glow')},  300);
