@@ -53,21 +53,21 @@ function draw(user,comp){
 function game(userChoice){
 const compChoice=getComputerChoice();
     switch(userChoice + compChoice){
-           case "sw";
-            case "wg";
-            case "gs";
+        case "sw":
+        case "wg":
+        case "gs":
             
             win(userChoice , compChoice);
             break;
-              case "ws";
-            case "gw";
-            case "sg";
+        case "ws":
+        case "gw":
+        case "sg":
             loss(userChoice , compChoice);
             
             break;
-               case "ss";
-            case "ww";
-            case "gg";
+        case "ss":
+        case "ww":
+        case "gg":
             draw(userChoice , compChoice);
             
             break;
