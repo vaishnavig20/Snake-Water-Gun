@@ -1,5 +1,5 @@
 let userScore=0;
-let computerScore=0;
+let compScore=0;
 let userScore_span=document.getElementById("user-score");
 const compScore_span=document.getElementById("comp-score");
 let scoreBoard_div=document.querySelector(".score-board");
@@ -12,7 +12,7 @@ const gun_div=document.getElementById("g");
 function getComputerChoice(){
 const choices=['s','w','g'];
     var x=Math.floor(Math.random()*3);
-    return choices(x);
+    return choices[x];
 }
 function convertToWord(letter){
     if(letter==="s") return "Snake";
