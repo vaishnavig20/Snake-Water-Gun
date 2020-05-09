@@ -44,7 +44,7 @@ function loss(user,comp){
 function draw(user,comp){
      const smallUser="user".fontsize(3).sup();
     const smallComp="comp".fontsize(3).sup();
-    result_p.innerHTML= `${convertToWord(user)}${smallUser}   draws with ${convertToWord(comp)} ${smallComp},Tie!"`;
+    result_p.innerHTML= `${convertToWord(user)}${smallUser}   draws with ${convertToWord(comp)}${smallComp},Tie!"`;
     document.getElementById(user).classList.add('gray-glow');
      setTimeout(function() 
     {document.getElementById(user).classList.remove('gray-glow')},  300);
